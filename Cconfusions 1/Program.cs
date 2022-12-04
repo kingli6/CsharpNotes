@@ -7,14 +7,14 @@ Rank[] ranks = new[] { Rank.one, Rank.two, Rank.three, Rank.jack };
 List<Card> cards = new List<Card>();
 for (int i = 0; i < colors.Length; i++)
 {
-for (int j = 0; j < ranks.Length; j++)
-{
-cards.Add(new Card(colors[i], ranks[j]));
-}
+    for (int j = 0; j < ranks.Length; j++)
+    {
+        cards.Add(new Card(colors[i], ranks[j]));
+    }
 }
 foreach (var item in cards)
 {
-Console.WriteLine((item.color, item.rank));
+    Console.WriteLine((item.color, item.rank));
 }/*THE FUCK. A bracket made this print, it didn't print otherwise...
     item.color +" "+ item.rank this works
     two brackets works....
