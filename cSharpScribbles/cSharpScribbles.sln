@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "designPatter Behavioral", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01 interface Robot", "..\01 interface Robot\01 interface Robot.csproj", "{34B1D6E1-6C0F-40DA-947A-11CAD6AE6F56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritence Backpack", "..\Inheritence Backpack\Inheritence Backpack.csproj", "{A383F3A2-50AB-494F-BB8F-40B7B3FDC09A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritence Backpack", "..\Inheritence Backpack\Inheritence Backpack.csproj", "{A383F3A2-50AB-494F-BB8F-40B7B3FDC09A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringOverride", "..\stringOverride\stringOverride.csproj", "{71BEACE7-15E2-49C9-BEAE-614DAC461719}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A383F3A2-50AB-494F-BB8F-40B7B3FDC09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A383F3A2-50AB-494F-BB8F-40B7B3FDC09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A383F3A2-50AB-494F-BB8F-40B7B3FDC09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

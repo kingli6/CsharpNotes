@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            User user = new User("Joe", "Fisher");
+            //User hiUser = new User();   //hi
+            //User userName = new User("Jonathan");   // Hi, Jonathan
+            User user = new User("Joe", "Fisher");    //Hi, welcome Joe Fisher
         }
-
-        
 
         class User
         {

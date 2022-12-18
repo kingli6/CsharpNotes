@@ -11,9 +11,11 @@ while (true)
     string choice = Console.ReadLine();
     InventoryItem item = choice switch   // Mistake here. Forgot that choice variable is needed. 
     {
-        "1" => new Sword(), "2" => new shield(), "3" => new drink(),
+        "1" => new Sword(), 
+        "2" => new shield(), 
+        "3" => new drink(),
     };
-    if (!myBackPack.AddItem(item)) Console.WriteLine("Could not add this item");    // New knowledge! THis adds the item!
+    if (!myBackPack.AddItem(item)) Console.WriteLine("Could not add this item");    // New knowledge! THis adds the item! ELSE prints our the WriteLine
 }
 
 class BackPack
