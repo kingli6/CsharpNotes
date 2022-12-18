@@ -1,36 +1,36 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
+int[] newList = new int[0];
+int[] newList2 = new int[newList.Length +1];
+newList= newList2;
+newList[0] = 100; //got error out of range
+Console.WriteLine(newList[0]);
+if (newList == newList2)
+{
+    Console.WriteLine("its the same");
+}
 
-Color[] colors = new Color[] { Color.heart, Color.spade, Color.diamond, Color.clover };
-Rank[] ranks = new[] { Rank.one, Rank.two, Rank.three, Rank.jack };
-List<Card> cards = new List<Card>();
-for (int i = 0; i < colors.Length; i++)
+Console.WriteLine(newList2[0]); // so newList2 and newList1 share the same reference.!!!!
+
+List<string> list = new List<string>();
+list.Add("one");
+list.Add("two");
+foreach (string items in list._items){
+    Console.WriteLine(items);
+}
+
+class List<T>
 {
-    for (int j = 0; j < ranks.Length; j++)
+    public T[] _items = new T[0];   // Does't the 0 create an array of 0 slots, which can't be changed, right?
+    //public T GetItemAt(int index ) => _items[index];
+    public void Add(T newValue)
     {
-        cards.Add(new Card(colors[i], ranks[j]));
+        T[] updated = new T[_items.Length + 1]; // this creates a new array with 1+ spot than _items[T]
+        for (int index = 0; index < _items.Length; index++) {   // first iteration, nothing happens
+            updated[index] = _items[index];}
+
+        updated[^1] = newValue;
+        _items = updated;
     }
 }
-foreach (var item in cards)
-{
-    Console.WriteLine((item.color, item.rank));
-}/*THE FUCK. A bracket made this print, it didn't print otherwise...
-    item.color +" "+ item.rank this works
-    two brackets works....
-    item.color, item.rank      THis doesn't work
-*/
-class Card
-{
-    public Color color { get; init; }
-    public Rank rank { get; init; }
-    public Card(Color color, Rank rank)
-    {
-        this.color = color;
-        this.rank = rank;
-    }
-    public bool isSymbol => rank == Rank.jack && rank == Rank.queen && rank == Rank.king && rank == Rank.ace;
-    public bool isNumber => !isSymbol;
-}
-enum Color { heart, diamond, spade, clover }
-enum Rank { one, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace }
