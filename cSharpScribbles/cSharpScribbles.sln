@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01 interface Robot", "..\01
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritence Backpack", "..\Inheritence Backpack\Inheritence Backpack.csproj", "{A383F3A2-50AB-494F-BB8F-40B7B3FDC09A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stringOverride", "..\stringOverride\stringOverride.csproj", "{71BEACE7-15E2-49C9-BEAE-614DAC461719}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stringOverride", "..\stringOverride\stringOverride.csproj", "{71BEACE7-15E2-49C9-BEAE-614DAC461719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterMind", "..\MasterMind\MasterMind.csproj", "{5FC21099-87CB-488C-B783-466A0EC49391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BEACE7-15E2-49C9-BEAE-614DAC461719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC21099-87CB-488C-B783-466A0EC49391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC21099-87CB-488C-B783-466A0EC49391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC21099-87CB-488C-B783-466A0EC49391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC21099-87CB-488C-B783-466A0EC49391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
